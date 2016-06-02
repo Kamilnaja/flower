@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="stylesheets/normalize.css" />
+	<link rel="stylesheet" href="stylesheets/screen.css" />
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<section class="bg">
+	<div class="nav-semi">
+		<div class="wrapper">
+			<h1 class="site-header"><a href="index.html">Graff<span class="pink">Pink</span></a></h1>
+			<nav class="navigation">
+				<ul class="navigation-ul" id="navi">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#"><img src="img/img.png" class="login-img">Login</a></li>
+				</ul>
+				<button class="menu-toggle" id="toggler"></button>
+			</nav>
+		</div>
+	</div>
+</section>
+<script>
+var button = document.getElementById("toggler");
+button.onclick = showAlert;
+	function showAlert(){
+
+		// var nav = document.getElementById('navi').childNodes;
+		// nav.className += " show-me";
+		var navPar = document.getElementById('navi');
+		//navPar.className += " show-me";
+		navPar.style.display =  "block";
+	
+	}
+</script>
+</body>
+</html>
