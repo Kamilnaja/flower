@@ -15,28 +15,31 @@
 			<h1 class="site-header"><a href="index.html">Graff<span class="pink">Pink</span></a></h1>
 			<nav class="navigation">
 				<ul class="navigation-ul" id="navi">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#"><img src="img/img.png" class="login-img">Login</a></li>
+					<li class="nav-li"><a href="#">Home</a></li>
+					<li class="nav-li"><a href="#">About us</a></li>
+					<li class="nav-li"><a href="#">Services</a></li>
+					<li class="nav-li"><a href="#">Contact</a></li>
+					<li class="nav-li"><a href="#"><img src="img/img.png" class="login-img">Login</a></li>
 				</ul>
 				<button class="menu-toggle" id="toggler"></button>
 			</nav>
-		</div>
+		</div><!-- wrappern -->
+	</div><!-- nav-semi -->
+	<div class="bg-text">
+		<h2 class="bg-h2">Welcome to pink</h2>
+		<p class="bg-p">A multi purpose theme from cssauthors.com</p>
 	</div>
 </section>
+<section class="our-services wrapper">
+	<h2 class="our-services-h2">Lorem ipsum is simply dummy</h2>
+	<p class="our-services-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, fuga voluptate animi cum omnis odio quidem deleniti architecto, commodi atque illo voluptas cupiditate, sint amet quo quasi, esse aspernatur dicta.</p>
+</section>
 <script>
-var button = document.getElementById("toggler");
-button.onclick = showAlert;
-	function showAlert(){
-
-		// var nav = document.getElementById('navi').childNodes;
-		// nav.className += " show-me";
-		var navPar = document.getElementById('navi');
-		//navPar.className += " show-me";
-		navPar.style.display =  "block";
-	
+	var button = document.getElementById("toggler");
+	button.onclick = toggle;
+		function toggle(){
+			var navPar = document.querySelector(".navigation-ul");
+			navPar.classList.toggle('show-me');
 	}
 </script>
 </body>
