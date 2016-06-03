@@ -135,13 +135,58 @@ html {
   margin-right: auto;
 }
 
+/* line 114, ../sass/screen.scss */
+.our-services-h2 {
+  font: normal 3.7rem "Open Sans", sans-serif;
+  text-align: center;
+}
+
+/* line 118, ../sass/screen.scss */
+.our-services-p {
+  font: normal 1.7rem "Open Sans", sans-serif;
+  text-align: center;
+}
+
+/* line 122, ../sass/screen.scss */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 126, ../sass/screen.scss */
+.images .blue {
+  background-color: #4eb9f4;
+}
+/* line 129, ../sass/screen.scss */
+.images .green {
+  background-color: #6fc125;
+}
+/* line 132, ../sass/screen.scss */
+.images .red {
+  background-color: #ff5649;
+}
+/* line 135, ../sass/screen.scss */
+.images .orange {
+  background-color: #e48f23;
+}
+/* line 138, ../sass/screen.scss */
+.images .circle {
+  width: 180px;
+  height: 100%;
+  color: white;
+  border-radius: 50%;
+  line-height: 180px;
+  text-align: center;
+  margin-left: 0;
+}
+
 @media (max-width: 800px) {
-  /* line 118, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   .navigation-ul {
     display: none;
   }
 
-  /* line 121, ../sass/screen.scss */
+  /* line 155, ../sass/screen.scss */
   .menu-toggle {
     display: inline;
   }
