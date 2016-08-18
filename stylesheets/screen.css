@@ -1,346 +1,448 @@
 /* line 3, ../sass/screen.scss */
-html {
-  font-size: 62.5%;
+html
+{
+    font-size: 62.5%;
 }
 
 /* line 6, ../sass/screen.scss */
-.bg {
-  background-image: url("../img/bg.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  height: 590px;
+.bg
+{
+    overflow: hidden;
+
+    height: 590px;
+
+    background: url('../img/bg.jpg') no-repeat 50% 50%;
+
+    background-size: cover;
 }
 /* line 13, ../sass/screen.scss */
-.bg .bg-text {
-  margin-bottom: 15%;
-  color: white;
-  text-align: center;
+.bg .bg-text
+{
+    margin-bottom: 15%;
+
+    text-align: center;
+
+    color: white;
 }
 /* line 17, ../sass/screen.scss */
-.bg .bg-text .bg-h2 {
-  font-size: 7.0rem;
-  text-transform: uppercase;
+.bg .bg-text .bg-h2
+{
+    font-size: 7.0rem;
+
+    text-transform: uppercase;
 }
 /* line 21, ../sass/screen.scss */
-.bg .bg-text .bg-p {
-  font: 2.5rem lato;
+.bg .bg-text .bg-p
+{
+    font: 2.5rem lato;
 }
 
 /* line 28, ../sass/screen.scss */
-.wrapper {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: border-box;
+.wrapper
+{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 10px;
 }
 
 /* line 38, ../sass/screen.scss */
-.site-header {
-  display: inline;
-  font-size: 4.0rem;
-  font-family: "Kaushan Script", cursive;
-  cursor: pointer;
+.site-header
+{
+    font: 4.0rem 'Kaushan Script', cursive;
+
+    display: inline;
+
+    cursor: pointer;
 }
 /* line 43, ../sass/screen.scss */
-.site-header a {
-  text-decoration: none;
+.site-header a
+{
+    text-decoration: none;
 }
 /* line 45, ../sass/screen.scss */
-.site-header a:active {
-  color: pink;
+.site-header a:active
+{
+    color: pink;
 }
 /* line 49, ../sass/screen.scss */
-.site-header .pink {
-  color: pink;
+.site-header .pink
+{
+    color: pink;
 }
 
 /* line 53, ../sass/screen.scss */
-.nav-semi {
-  background-color: rgba(255, 255, 255, 0.9);
+.nav-semi
+{
+    background-color: rgba(255, 255, 255, .9);
 }
 
 /* line 56, ../sass/screen.scss */
-.navigation-ul {
-  list-style-type: none;
-  margin: 0;
-  margin-top: 20px;
-  float: right;
-  padding-left: 0;
+.navigation-ul
+{
+    float: right;
+
+    margin: 0;
+    margin-top: 20px;
+    padding-left: 0;
+
+    list-style-type: none;
 }
 /* line 62, ../sass/screen.scss */
-.navigation-ul .login-img {
-  margin-right: 20px;
+.navigation-ul .login-img
+{
+    margin-right: 20px;
 }
 /* line 65, ../sass/screen.scss */
-.navigation-ul li a {
-  padding: 7px 12px;
-  color: #454545;
+.navigation-ul li a
+{
+    padding: 7px 12px;
+
+    color: #454545;
 }
 /* line 68, ../sass/screen.scss */
-.navigation-ul li a:hover {
-  background-color: #de6d6e;
-  color: white;
-  border-radius: 10px;
-  padding: 7px 12px;
+.navigation-ul li a:hover
+{
+    padding: 7px 12px;
+
+    color: white;
+    border-radius: 10px;
+    background-color: #de6d6e;
 }
 
 /* line 77, ../sass/screen.scss */
-.navigation {
-  display: inline;
-  overflow: hidden;
+.navigation
+{
+    display: inline;
+    overflow: hidden;
 }
 /* line 80, ../sass/screen.scss */
-.navigation li {
-  display: inline;
-  margin-left: 20px;
-  font: 1.6rem "Open Sans", sans-serif;
+.navigation li
+{
+    font: 1.6rem 'Open Sans', sans-serif;
+
+    display: inline;
+
+    margin-left: 20px;
 }
 /* line 85, ../sass/screen.scss */
-.navigation a {
-  text-decoration: none;
+.navigation a
+{
+    text-decoration: none;
 }
 
 /* line 89, ../sass/screen.scss */
-.menu-toggle {
-  width: 40px;
-  height: 40px;
-  border: 0;
-  border-radius: 10px;
-  display: none;
-  float: right;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  color: white;
-  transition: 0.3s ease;
+.menu-toggle
+{
+    font-size: 30px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: none;
+    float: right;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    transition: .3s ease;
+
+    color: white;
+    border: 0;
+    border-radius: 10px;
 }
 /* line 103, ../sass/screen.scss */
-.menu-toggle:hover {
-  background-color: white;
+.menu-toggle:hover
+{
+    background-color: white;
 }
 
 /* line 109, ../sass/screen.scss */
-.show-me {
-  display: block !important;
-  background-color: rgba(255, 255, 255, 0.9);
-  top: 80px;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 20px;
-  position: absolute;
-  left: 0;
-  right: -50%;
+.show-me
+{
+    position: absolute;
+    top: 80px;
+    right: -50%;
+    left: 0;
+
+    display: block !important;
+
+    width: 100%;
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, .9);
 }
 /* line 119, ../sass/screen.scss */
-.show-me li {
-  padding-top: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.show-me li
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
 }
 
 /* line 127, ../sass/screen.scss */
-.our-services-h2 {
-  font: normal 3.7rem "Open Sans", sans-serif;
-  text-align: center;
+.our-services-h2
+{
+    font: normal 3.7rem 'Open Sans', sans-serif;
+
+    text-align: center;
 }
 
 /* line 131, ../sass/screen.scss */
-.our-services-p {
-  font: normal 1.7rem "Open Sans", sans-serif;
-  text-align: center;
+.our-services-p
+{
+    font: normal 1.7rem 'Open Sans', sans-serif;
+
+    text-align: center;
 }
 
 /* line 137, ../sass/screen.scss */
-.images .images-ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.images .images-ul
+{
+    display: flex;
+
+    padding: 0;
+
+    list-style-type: none;
+
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /* line 143, ../sass/screen.scss */
-.images .images-ul li {
-  float: left;
-  position: relative;
+.images .images-ul li
+{
+    position: relative;
+
+    float: left;
 }
 /* line 148, ../sass/screen.scss */
-.images .back {
-  position: absolute;
-  box-sizing: border-box;
-  width: 180px;
-  height: 180px;
-  line-height: 180px;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  margin-left: 0;
-  top: -20px;
-  cursor: pointer;
-  font-size: 30px;
-  transform: rotateY(90deg);
+.images .back
+{
+    font-size: 30px;
+    line-height: 180px;
+
+    position: absolute;
+    top: -20px;
+
+    box-sizing: border-box;
+    width: 180px;
+    height: 180px;
+    margin-left: 0;
+
+    cursor: pointer;
+    transform: rotateY(90deg);
+    text-align: center;
+
+    color: white;
+    border-radius: 50%;
 }
 /* line 163, ../sass/screen.scss */
-.images .blue {
-  background-color: #4eb9f4;
+.images .blue
+{
+    background-color: #4eb9f4;
 }
 /* line 166, ../sass/screen.scss */
-.images .green {
-  background-color: #6fc125;
+.images .green
+{
+    background-color: #6fc125;
 }
 /* line 169, ../sass/screen.scss */
-.images .red {
-  background-color: #ff5649;
+.images .red
+{
+    background-color: #ff5649;
 }
 /* line 172, ../sass/screen.scss */
-.images .orange {
-  background-color: #e48f23;
+.images .orange
+{
+    background-color: #e48f23;
 }
 /* line 175, ../sass/screen.scss */
-.images .circle {
-  box-sizing: border-box;
-  width: 180px;
-  height: 180px;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  margin-left: 0;
+.images .circle
+{
+    box-sizing: border-box;
+    width: 180px;
+    height: 180px;
+    margin-left: 0;
+
+    text-align: center;
+
+    color: white;
+    border-radius: 50%;
 }
 /* line 183, ../sass/screen.scss */
-.images .circle img {
-  margin-top: 30px;
+.images .circle img
+{
+    margin-top: 30px;
 }
 /* line 186, ../sass/screen.scss */
-.images .circle p {
-  font-size: 1.7rem;
+.images .circle p
+{
+    font-size: 1.7rem;
 }
 
 /* line 191, ../sass/screen.scss */
-.images-ul li:hover .back {
-  animation: twirl 0.1s 0.1s ease-in forwards reverse;
+.images-ul li:hover .back
+{
+    animation: twirl .1s ease-out forwards reverse;
 }
+
 
 /* line 194, ../sass/screen.scss */
-.images-ul li:hover .circle {
-  animation: twirl 0.1s ease-out forwards;
+.images-ul li:hover .circle
+{
+    animation: twirl .1s ease-out forwards;
 }
 
-@keyframes twirl {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(90deg);
-  }
+@keyframes twirl
+{
+    0%
+    {
+        transform: rotateY(0deg);
+    }
+    100%
+    {
+        transform: rotateY(90deg);
+    }
 }
+
+
 /* line 202, ../sass/screen.scss */
-.blog .blog-h2 {
-  font: bold 2.7rem "Open Sans", sans-serif;
-  display: block;
-  cursor: pointer;
+.blog .blog-h2
+{
+    font: bold 2.7rem 'Open Sans', sans-serif;
+
+    display: block;
+
+    cursor: pointer;
 }
 /* line 207, ../sass/screen.scss */
-.blog img {
-  margin-right: 30px;
-  display: inline;
-  float: left;
-  margin-top: 11px;
-  margin-bottom: 10px;
-  cursor: pointer;
+.blog img
+{
+    display: inline;
+    float: left;
+
+    margin: 11px 30px 0 10px;
+
+    cursor: pointer;
 }
 /* line 215, ../sass/screen.scss */
-.blog .blog-text {
-  font: normal 1.6rem "Open Sans", sans-serif;
-  color: #1a1a1a;
-  display: block;
+.blog .blog-text
+{
+    font: normal 1.6rem 'Open Sans', sans-serif;
+
+    display: block;
+
+    color: #1a1a1a;
 }
 
 /* line 221, ../sass/screen.scss */
-.hide-me {
-  display: none;
+.hide-me
+{
+    display: none;
 }
 
 /* line 224, ../sass/screen.scss */
-.site-footer {
-  background-color: #2b2423;
+.site-footer
+{
+    background-color: #2b2423;
 }
 /* line 226, ../sass/screen.scss */
-.site-footer .wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.site-footer .wrapper
+{
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 /* line 230, ../sass/screen.scss */
-.site-footer .wrapper a {
-  color: white;
+.site-footer .wrapper a
+{
+    color: white;
 }
 /* line 233, ../sass/screen.scss */
-.site-footer .wrapper .submenu-h2 {
-  font-size: 2.1rem;
-  font-weight: normal;
-  color: grey;
+.site-footer .wrapper .submenu-h2
+{
+    font-size: normal 2.1rem;
+
+    color: grey;
 }
 /* line 238, ../sass/screen.scss */
-.site-footer .wrapper ul {
-  padding: 0;
-  list-style-type: none;
+.site-footer .wrapper ul
+{
+    padding: 0;
+
+    list-style-type: none;
 }
 /* line 241, ../sass/screen.scss */
-.site-footer .wrapper ul li {
-  margin-top: 10px;
+.site-footer .wrapper ul li
+{
+    margin-top: 10px;
 }
 /* line 245, ../sass/screen.scss */
-.site-footer .wrapper li a {
-  color: grey;
-  text-decoration: none;
-  font-size: 1.5rem;
+.site-footer .wrapper li a
+{
+    font-size: 1.5rem;
+
+    text-decoration: none;
+
+    color: grey;
 }
 /* line 251, ../sass/screen.scss */
-.site-footer .circle-footer {
-  width: 52px;
-  height: 52px;
-  background-color: grey;
-  line-height: 78px;
-  margin-left: 25px;
-  display: block;
-  float: left;
-  border-radius: 50%;
-  text-align: center;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.site-footer .circle-footer
+{
+    line-height: 78px;
+
+    display: block;
+    float: left;
+
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+    margin-left: 25px;
+
+    cursor: pointer;
+    transition: background-color .3s ease;
+    text-align: center;
+
+    border-radius: 50%;
+    background-color: grey;
 }
 /* line 264, ../sass/screen.scss */
-.site-footer .circle-footer:hover {
-  background-color: white;
+.site-footer .circle-footer:hover
+{
+    background-color: white;
 }
 
-@media (max-width: 800px) {
-  /* line 271, ../sass/screen.scss */
-  .navigation-ul {
-    display: none;
-  }
+@media (max-width: 800px)
+{
+    /* line 271, ../sass/screen.scss */
+    .navigation-ul
+    {
+        display: none;
+    }
 
-  /* line 274, ../sass/screen.scss */
-  .menu-toggle {
-    display: inline;
-  }
+    /* line 274, ../sass/screen.scss */
+    .menu-toggle
+    {
+        display: inline;
+    }
 
-  /* line 277, ../sass/screen.scss */
-  .site-footer .wrapper {
-    flex-direction: column-reverse;
-  }
+    /* line 277, ../sass/screen.scss */
+    .site-footer .wrapper
+    {
+        flex-direction: column-reverse;
+    }
 
-  /* line 281, ../sass/screen.scss */
-  .footer-social-ul li:first-child {
-    margin-left: 0;
-  }
+    /* line 281, ../sass/screen.scss */
+    .footer-social-ul li:first-child
+    {
+        margin-left: 0;
+    }
 }
